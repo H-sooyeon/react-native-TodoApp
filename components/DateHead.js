@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   statusBarPlaceholder: {
-    backgroundColor: '#673AB7',
+    backgroundColor: '#683AB9',
   },
 });
 

@@ -1,9 +1,14 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 function Empty() {
   return (
     <View style={styles.block}>
+      <Image
+        source={require('../assets/images/young_and_happy.png')}
+        style={styles.image}
+        resizeMode="contain"
+      />
       <Text style={styles.description}>오늘의 할 일은 무엇인가요?</Text>
     </View>
   );
@@ -18,6 +23,11 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 20,
     color: '#9e9e9e',
+  },
+  image: {
+    width: 240,
+    height: 179,
+    marginBottom: 16,
   },
 });
 
